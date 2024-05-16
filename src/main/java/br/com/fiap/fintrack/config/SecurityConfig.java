@@ -10,9 +10,9 @@ public class SecurityConfig {
 
         @Bean
         SecurityFilterChain config(HttpSecurity http) throws Exception {
-            return http
-                .csrf( csrf -> csrf.disable() )
-                .build();
+                return http
+                        .csrf( csrf -> csrf.disable() )
+                        .build();
         }
 
 }
